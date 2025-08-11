@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="./index.js" defer></script>
+    <style>
+body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: white;
+        }
+        h1 {
+            text-align: center;
+            margin: 20px 0;
+            font-size: 28px;
+        }
+        table {
+            width: 80%;
+            margin: auto;
+            border-collapse: collapse;
+        }
+        table, th, td {
+            border: 1px solid black;
+        }
+        th, td {
+            padding: 8px 12px;
+            text-align: left;
+        }
+        th {
+            background-color: #f2f2f2;
+        }
+        .hide{
+            display: none;
+        }
+        h1{
+            text-align: center;
+        }
+
+    </style>
+</head>
+<body>
+    <table class="hide">
+    <h1>Fetching api data</h1>
+    </table>
+    <input type="text" id="in" placeholder="Text"/>
+    <button type="submit">add data</button>
+    <p id="data"></p>
+    <script>
+        const input=document.getElementById("id");
+        const btn=document.getElementsByName("button");
+        const para=document.getElementById("data");
+
+        btn[0].addEventListener("Click" ,() =>{
+       console.log(input.value);   
+        para.textContent = input.value; });
+    </script>
+</body>
+</html>
+
+
+
+
+
